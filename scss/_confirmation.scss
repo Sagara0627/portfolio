@@ -1,0 +1,43 @@
+#confirmation {
+
+  .coment {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .contactform {
+    font-size: 1.6rem;
+    margin: 2.5rem auto;
+
+    th {
+      line-height: 2;
+      text-align: right;
+      vertical-align: middle;
+    }
+
+    td {
+      line-height: 2;
+      padding-left: 1.5rem;
+    }
+  }
+
+  .contactform_btn {
+    width: 30%;
+    text-align: center;
+    margin: 0 auto 1.5rem;
+
+    .submit {
+      width: 70%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    
+    a {
+      font-size: 1.4rem;
+      margin-left: 2rem;
+    }
+  }
+
+}

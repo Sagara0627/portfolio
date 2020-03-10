@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/////// 変数 ///////
+
+$lightgrey: #d3d3d3;
+
+/////// mixin ///////
+
+@mixin tab {
+  @media screen and (max-width: 959px){
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: 767px){
+    @content;
+  }
+}
+
+@mixin  transition($x,$y){
+  opacity: 0;
+  transform: translate($x,$y);
+  transition: transform 1s;
+}
+
+@mixin fade_in {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/////// 全体のスタイル ///////
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+
+
+.inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  height: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 5rem;
+  margin: 10rem 0 5rem;
+
+  @include tab {
+    margin-top: 15rem;
+  }
+}

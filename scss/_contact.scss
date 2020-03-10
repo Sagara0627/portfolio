@@ -1,0 +1,32 @@
+#contact {
+  @include transition(0,13rem);
+
+  table {
+    margin: 0 auto;
+
+    th {
+      font-size: 1.2rem;
+      text-align: right;
+      vertical-align: middle;
+      padding: 0 0.5rem 0.5rem 0;
+    }
+
+    td {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .submit {
+    width: 10rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#contact.fade_in {
+  @include fade_in;
+}

@@ -1,0 +1,48 @@
+#links {
+  padding-bottom: 5rem;
+  @include transition(0,13rem);
+  
+  table {
+    width: 50%;
+    margin-right: auto;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+    @include tab {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    td {
+      padding-left: 2rem;
+    }
+
+    .fab {
+      border-radius: 3px;
+      background-color: white;
+    }
+
+    .twitter {
+        color: skyblue;
+    }
+
+    .facebook {
+      color: navy;
+    }
+
+    .instagram {
+      background-color: #f6c;
+    }
+
+    .qiita {
+      background-color: #3c3;
+    }
+  } 
+}
+#links.fade_in {
+  @include fade_in;
+} 

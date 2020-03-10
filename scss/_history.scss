@@ -1,0 +1,28 @@
+#history {
+  @include transition(0,13rem);
+
+  table {
+    width: 50%;
+    font-size: 1.4rem;
+    margin-left:auto;
+
+    @include tab {
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    th {
+      width: 10rem;
+      text-align: left;
+      padding-bottom: 3.5rem;
+    }
+  
+    td {
+      padding-left: 2rem;
+    }
+  }
+}
+
+#history.fade_in {
+  @include fade_in;
+}

@@ -1,0 +1,436 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+
+.inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  height: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 5rem;
+  margin: 10rem 0 5rem;
+}
+@media screen and (max-width: 959px) {
+  .title {
+    margin-top: 15rem;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 7.5rem;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: white;
+}
+header h1 {
+  font-size: 5rem;
+}
+header .header_nav ul {
+  display: flex;
+  font-size: 2rem;
+}
+@media screen and (max-width: 959px) {
+  header .header_nav ul {
+    display: none;
+  }
+}
+header .header_nav ul li:not(:first-child) {
+  margin-left: 2rem;
+}
+header #ham {
+  display: none;
+}
+header #ham:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 959px) {
+  header #ham {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+header #ham span {
+  height: 3px;
+  z-index: 999;
+  background-color: #fff;
+}
+header #ham_nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  line-height: 7rem;
+  font-size: 1.6rem;
+  padding-left: 7.5rem;
+  background-color: rgba(167, 6, 46, 0.8);
+  color: white;
+  transform: translate(130rem, 24.5rem);
+  transition: transform 1s 150ms ease-in-out;
+}
+header #ham_nav.appear {
+  transform: translate(150%, 24.5rem);
+}
+@media screen and (max-width: 767px) {
+  header #ham_nav.appear {
+    transform: translate(125%, 24.5rem);
+  }
+}
+
+#profile {
+  padding-top: 7.5rem;
+  opacity: 0;
+  transform: translate(0, -1rem);
+  transition: transform 1s;
+}
+#profile .p_content {
+  width: 50%;
+  font-size: 1.6rem;
+  margin-right: auto;
+}
+@media screen and (max-width: 959px) {
+  #profile .p_content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+#profile .p_content p {
+  line-height: 3rem;
+}
+
+#profile.fade_in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#history {
+  opacity: 0;
+  transform: translate(0, 13rem);
+  transition: transform 1s;
+}
+#history table {
+  width: 50%;
+  font-size: 1.4rem;
+  margin-left: auto;
+}
+@media screen and (max-width: 959px) {
+  #history table {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+#history table th {
+  width: 10rem;
+  text-align: left;
+  padding-bottom: 3.5rem;
+}
+#history table td {
+  padding-left: 2rem;
+}
+
+#history.fade_in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#skills {
+  opacity: 0;
+  transform: translate(0, 13rem);
+  transition: transform 1s;
+}
+#skills p {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+#skills .chart-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+#skills .chart-wrap .chart {
+  width: 50%;
+  height: 30rem;
+}
+@media screen and (max-width: 959px) {
+  #skills .chart-wrap .chart {
+    width: 100%;
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #skills .chart-wrap .chart {
+    height: 30rem;
+  }
+}
+
+#skills.fade_in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#works {
+  opacity: 0;
+  transform: translate(0, 13rem);
+  transition: transform 1s;
+}
+#works p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+#works.fade_in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#contact {
+  opacity: 0;
+  transform: translate(0, 13rem);
+  transition: transform 1s;
+}
+#contact table {
+  margin: 0 auto;
+}
+#contact table th {
+  font-size: 1.2rem;
+  text-align: right;
+  vertical-align: middle;
+  padding: 0 0.5rem 0.5rem 0;
+}
+#contact table td {
+  padding-bottom: 0.5rem;
+}
+#contact p {
+  text-align: center;
+}
+#contact .submit {
+  width: 10rem;
+  margin: 0;
+  padding: 0;
+}
+
+#contact.fade_in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#confirmation .coment {
+  font-size: 1.6rem;
+  text-align: center;
+}
+#confirmation .contactform {
+  font-size: 1.6rem;
+  margin: 2.5rem auto;
+}
+#confirmation .contactform th {
+  line-height: 2;
+  text-align: right;
+  vertical-align: middle;
+}
+#confirmation .contactform td {
+  line-height: 2;
+  padding-left: 1.5rem;
+}
+#confirmation .contactform_btn {
+  width: 30%;
+  text-align: center;
+  margin: 0 auto 1.5rem;
+}
+#confirmation .contactform_btn .submit {
+  width: 70%;
+}
+#confirmation .contactform_btn .submit:hover {
+  cursor: pointer;
+}
+#confirmation .contactform_btn a {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+}
+
+#form a {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#links {
+  padding-bottom: 5rem;
+  opacity: 0;
+  transform: translate(0, 13rem);
+  transition: transform 1s;
+}
+#links table {
+  width: 50%;
+  margin-right: auto;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+@media screen and (max-width: 959px) {
+  #links table {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+#links table a {
+  text-decoration: underline;
+}
+#links table td {
+  padding-left: 2rem;
+}
+#links table .fab {
+  border-radius: 3px;
+  background-color: white;
+}
+#links table .twitter {
+  color: skyblue;
+}
+#links table .facebook {
+  color: navy;
+}
+#links table .instagram {
+  background-color: #f6c;
+}
+#links table .qiita {
+  background-color: #3c3;
+}
+
+#links.fade_in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,11 @@
+#works {
+  @include transition(0,13rem);
+
+  p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+#works.fade_in {
+  @include fade_in;
+}
