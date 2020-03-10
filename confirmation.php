@@ -10,7 +10,7 @@
   <section id="confirmation">
     <h1 class="title">お問い合わせ内容</h1>
     <p class="coment">各項目に間違いが無ければ送信ボタンを押してください。</p>
-    <form action="form.php" method="POST">
+    <form action="form.html" method="POST">
       <table class="contactform">
         <tr>
           <th>性:</th>
